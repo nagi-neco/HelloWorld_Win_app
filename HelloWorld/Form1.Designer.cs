@@ -30,11 +30,12 @@
         {
             this.btnClickThis = new System.Windows.Forms.Button();
             this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnClickThis
             // 
-            this.btnClickThis.Location = new System.Drawing.Point(338, 188);
+            this.btnClickThis.Location = new System.Drawing.Point(339, 195);
             this.btnClickThis.Name = "btnClickThis";
             this.btnClickThis.Size = new System.Drawing.Size(75, 23);
             this.btnClickThis.TabIndex = 0;
@@ -51,11 +52,20 @@
             this.lblHelloWorld.TabIndex = 1;
             this.lblHelloWorld.Text = "label1";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(326, 119);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 19);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
             this.Name = "Form1";
@@ -69,6 +79,7 @@
 
         private System.Windows.Forms.Button btnClickThis;
         private System.Windows.Forms.Label lblHelloWorld;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

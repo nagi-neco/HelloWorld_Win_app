@@ -19,7 +19,28 @@ namespace HelloWorld
 
         private void btnClickThis_Click(object sender, EventArgs e)
         {
-            lblHelloWorld.Text = "Hello World!";
+            int result;
+            try
+            { 
+                result = int.Parse(textBox1.Text);
+                if (result >= 40)
+                {
+                    lblHelloWorld.Text = "合格";
+                }
+                else if (result < 40)
+                {
+                    lblHelloWorld.Text = "不合格";
+                }
+            }
+            catch(FormatException fe)
+            {
+                lblHelloWorld.Text = fe.Message;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
