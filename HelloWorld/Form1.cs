@@ -31,6 +31,10 @@ namespace HelloWorld
                 {
                     lblHelloWorld.Text = "不合格";
                 }
+                if (result <= 100 && result >= 80)
+                {
+                    lblHelloWorld.Text += "(^▽^)/";
+                }
             }
             catch(FormatException fe)
             {
