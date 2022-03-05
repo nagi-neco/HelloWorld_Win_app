@@ -25,11 +25,11 @@ namespace HelloWorld
                 result = int.Parse(textBox1.Text);
                 if (result >= 40)
                 {
-                    lblHelloWorld.Text = "合格";
+                    lblHelloWorld.Text = "happy";
                 }
                 else if (result < 40)
                 {
-                    lblHelloWorld.Text = "不合格";
+                    lblHelloWorld.Text = "Ahhhhhhhhh";
                 }
                 if (result <= 100 && result >= 80)
                 {
@@ -47,6 +47,21 @@ namespace HelloWorld
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHelloWorld_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
