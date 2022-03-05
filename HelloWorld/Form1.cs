@@ -21,7 +21,7 @@ namespace HelloWorld
         {
             int result;
             try
-            { 
+            {
                 result = int.Parse(textBox1.Text);
                 if (result >= 40)
                 {
@@ -35,8 +35,10 @@ namespace HelloWorld
                 {
                     lblHelloWorld.Text += "(^▽^)/";
                 }
+                if (result == 418)
+                    lblHelloWorld.Text = "418 I’m a teapot";
             }
-            catch(FormatException fe)
+            catch (FormatException fe)
             {
                 lblHelloWorld.Text = fe.Message;
             }
